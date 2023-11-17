@@ -83,6 +83,7 @@ static const Key keys[] = {
 	{ MODKEY2, 			XK_f,	   spawn,	   {.v = web } },
 	{ MODKEY2, 			XK_d, 	   spawn,	   {.v = discord } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY2, 			XK_s,	   spawn, 	   SHCMD("flameshot gui") },
 	{ MODKEY2, 			XK_F8,	   spawn, 	   SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-; pkill -RTMIN+10 statusbar") },
 	{ MODKEY2, 			XK_F9,	   spawn, 	   SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+; pkill -RTMIN+10 statusbar") },
 	{ MODKEY2, 			XK_F3,	   spawn, 	   SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(cat ~/.cache/statusid)") },
